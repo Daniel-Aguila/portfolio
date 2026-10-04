@@ -1,4 +1,5 @@
 import {getProjects} from "@/lib/project";
+import Link from "next/link";
 
 export default function ProjectsPage(){
     const projects = getProjects();
@@ -9,7 +10,7 @@ export default function ProjectsPage(){
             <ul>
                 {projects.map(project => (
                     <li key={project.id}>
-                        <ul>{project.title}</ul>
+                        <Link href={`/projects/${project.id}`}>{project.title}</Link>
                     </li>
                 ))}
             </ul>

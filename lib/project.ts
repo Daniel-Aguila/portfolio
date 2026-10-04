@@ -26,3 +26,10 @@ export const getProjects = (category: string = "all"): Project[] => {
     }
     return projects
 }
+
+export const getProject = (id: string): Project | undefined => {
+    const projects: Project[] = getProjects()
+    return projects.find((project: Project) => {
+        return project.id === id;
+    })
+}
