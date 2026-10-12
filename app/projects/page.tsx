@@ -6,7 +6,8 @@ export default function ProjectsPage() {
 
     return (
         <div>
-            <h1 className="text-5xl">Projects Page</h1>
+            <h1 className="text-4xl font-semibold font-stretch-expanded">Projects</h1>
+            <p className="mt-3 mb-8 text-tin">Firmware, kernels, and systems work.</p>
             <div>
                 {projects.map(project => (
                     <ProjectCard project={project} key={project.id} />
