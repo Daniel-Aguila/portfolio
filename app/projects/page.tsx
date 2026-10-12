@@ -1,5 +1,6 @@
 import {getProjects} from "@/lib/project";
 import Link from "next/link";
+import ProjectCard from "@/app/components/ProjectCard";
 
 export default function ProjectsPage(){
     const projects = getProjects();
@@ -9,9 +10,7 @@ export default function ProjectsPage(){
             <h1 className={"text-5xl"}>Projects Page</h1>
             <ul>
                 {projects.map(project => (
-                    <li key={project.id}>
-                        <Link className={"text-2xl"} href={`/projects/${project.id}`}>{project.title}</Link>
-                    </li>
+                    <ProjectCard project={project} key={project.id}/>
                 ))}
             </ul>
         </div>
