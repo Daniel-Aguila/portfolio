@@ -2,11 +2,11 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-board: #0f3d2e;
-  --color-trace: #1c5a44;
-  --color-silk: #edefe8;
-  --color-tin: #a9b1a6;
-  --color-copper: #c27c46;
+  --color-board: #1b1d22;
+  --color-trace: #343842;
+  --color-silk: #eceae4;
+  --color-tin: #9a9ea8;
+  --color-copper: #e0a645;
   --font-sans: var(--font-archivo);
   --font-mono: var(--font-plex-mono);
 }
