@@ -1,5 +1,6 @@
 import {getProject} from "@/lib/project";
 import {notFound} from "next/navigation";
+import Markdown from "react-markdown";
 
 export default async function ProjectPage({params}: {params: Promise<{id: string}>}) {
     const {id} = await params;
@@ -23,7 +24,7 @@ export default async function ProjectPage({params}: {params: Promise<{id: string
                 <li>{tags}</li>
             </ul>
 
-            <div>{project.content}</div>
+            <Markdown>{project.content}</Markdown>
         </div>
     )
 }

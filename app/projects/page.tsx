@@ -6,11 +6,11 @@ export default function ProjectsPage(){
 
     return (
         <div>
-            <h1>Projects Page</h1>
+            <h1 className={"text-5xl"}>Projects Page</h1>
             <ul>
                 {projects.map(project => (
                     <li key={project.id}>
-                        <Link href={`/projects/${project.id}`}>{project.title}</Link>
+                        <Link className={"text-2xl"} href={`/projects/${project.id}`}>{project.title}</Link>
                     </li>
                 ))}
             </ul>
