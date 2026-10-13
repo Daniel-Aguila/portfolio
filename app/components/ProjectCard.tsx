@@ -3,7 +3,7 @@ import type { Project } from '@/types/project';
 
 export default function ProjectCard({project}: {project: Project}){
     return (
-        <article className="border-t border-trace py-6">
+        <article className="flex flex-col rounded-lg border border-trace p-5 hover:border-copper">
             <Link href={`/projects/${project.id}`} className="text-xl font-semibold font-stretch-semi-expanded hover:text-copper">
                 {project.title}
             </Link>
