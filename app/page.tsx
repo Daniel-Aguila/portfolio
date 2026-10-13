@@ -9,7 +9,7 @@ export default function HomePage() {
       <>
         <section className="pt-16 pb-16">
           <h1 className="text-5xl leading-tight font-semibold font-stretch-expanded sm:text-6xl">
-            Software that runs close to the hardware.
+            Beep boop beep.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-tin">
             I build firmware, kernels, and GPU code. MS Computer Science at UT Austin,
