@@ -1,30 +1,38 @@
-import {getProject} from "@/lib/project";
-import {notFound} from "next/navigation";
+import { getProject } from "@/lib/project";
+import { notFound } from "next/navigation";
 import Markdown from "react-markdown";
+import Link from "next/link";
 
-export default async function ProjectPage({params}: {params: Promise<{id: string}>}) {
-    const {id} = await params;
-
+export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
     const project = getProject(id);
-    const tags = project?.tags?.join(", ") || "";
 
     if (!project) {
         notFound();
-        //returns a 404 error page
     }
 
+    const tags = project.tags?.join(", ");
+
     return (
-        <div>
-            <h1>{project.title}</h1>
-            <p>{project.description}</p>
+        <article className="pt-8">
+            <Link href="/projects" className="text-sm text-tin hover:text-silk">
+                Back to projects
+            </Link>
 
-            <ul>
-                <li>{project.category}</li>
-                <li>{project.date}</li>
-                <li>{tags}</li>
-            </ul>
+            <h1 className="mt-6 text-4xl leading-tight font-semibold font-stretch-expanded sm:text-5xl">
+                {project.title}
+            </h1>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-tin">{project.description}</p>
+            <p className="mt-4 text-sm text-tin">
+                {project.category}, {project.date}
+                {tags && <>, {tags}</>}
+            </p>
 
-            <Markdown>{project.content}</Markdown>
-        </div>
-    )
+            {/* video goes here next step */}
+
+            <div className="prose prose-invert mt-12 max-w-3xl prose-a:text-copper prose-headings:font-stretch-semi-expanded">
+                <Markdown>{project.content}</Markdown>
+            </div>
+        </article>
+    );
 }

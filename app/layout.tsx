@@ -15,7 +15,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html lang="en" className={`${archivo.variable} ${plexMono.variable} h-full font-sans antialiased`}>
         <body className="flex min-h-full flex-col">
-        <nav className="mx-auto flex w-full max-w-3xl items-baseline justify-between px-6 py-8">
+        <nav className="mx-auto flex w-full max-w-5xl items-baseline justify-between px-6 py-8">
             <Link href="/" className="text-lg font-semibold font-stretch-expanded hover:text-copper">
                 Daniel Aguila
             </Link>
