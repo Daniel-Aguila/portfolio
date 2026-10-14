@@ -3,7 +3,7 @@ import { getProjects } from "@/lib/project";
 import ProjectCard from "@/app/components/ProjectCard";
 
 export default function HomePage() {
-  const recentProjects = getProjects().slice(0,3);
+  const recentProjects = getProjects().slice(0, 3);
 
   return (
       <>
@@ -30,6 +30,18 @@ export default function HomePage() {
               Projects
             </Link>
           </div>
+          <p className="mt-6 text-sm text-tin">
+            I also explain Rust and systems concepts on{" "}
+            <a
+                href="https://www.youtube.com/@LowCapy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-copper hover:underline"
+            >
+              LowCapy
+            </a>
+            .
+          </p>
         </section>
 
         <section>
