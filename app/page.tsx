@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getProjects } from "@/lib/project";
 import ProjectCard from "@/app/components/ProjectCard";
 
@@ -8,6 +9,14 @@ export default function HomePage() {
   return (
       <>
         <section className="pt-16 pb-16">
+          <Image
+              src="/dani_pic.jpg"
+              alt="Daniel Aguila"
+              width={96}
+              height={96}
+              priority
+              className="mb-8 h-20 w-20 rounded-full border border-trace object-cover"
+          />
           <h1 className="text-5xl leading-tight font-semibold font-stretch-expanded sm:text-6xl">
             Beep boop beep.
           </h1>
