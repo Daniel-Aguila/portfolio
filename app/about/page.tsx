@@ -52,8 +52,7 @@ export default function AboutPage() {
                 <p>
                     AI and coding agents have been great, and I use them at work every day. But
                     programming is something I genuinely enjoy, so on my own time I still like to
-                    understand the code and write it by hand. That&apos;s also how this site was
-                    built.
+                    understand the code and write it by hand.
                 </p>
             </div>
 
