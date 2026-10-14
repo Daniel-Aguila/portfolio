@@ -1,6 +1,6 @@
 import { getProject } from "@/lib/project";
 import { notFound } from "next/navigation";
-import YouTubeEmbed from "@/app/components/YoutubeEmbed";
+import YoutubeEmbed from "@/app/components/YoutubeEmbed";
 import Markdown from "react-markdown";
 import Link from "next/link";
 
@@ -31,7 +31,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
             {project.youtubeId && (
                 <div className="mt-10">
-                    <YouTubeEmbed id={project.youtubeId}/>
+                    <YoutubeEmbed id={project.youtubeId}/>
                 </div>
             )}
 
