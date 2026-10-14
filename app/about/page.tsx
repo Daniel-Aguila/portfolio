@@ -18,7 +18,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                     Outside of work and school, I run{" "}
-                    <a href="YOUR_CHANNEL_URL" target="_blank" className="text-copper hover:underline">
+                    <a href="https://www.youtube.com/@LowCapy" target="_blank" className="text-copper hover:underline">
                         LowCapy
                     </a>
                     , a YouTube channel where I make videos explaining Rust and systems concepts and
