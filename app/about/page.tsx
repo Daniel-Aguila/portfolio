@@ -17,8 +17,20 @@ export default function AboutPage() {
                     systems, and virtualization.
                 </p>
                 <p>
+                    There are plenty of good tools for any job, but my favorite languages are{" "}
+                    <span className="text-silk">Go</span> and{" "}
+                    <span className="text-silk">Rust</span>. Go is great for getting things
+                    done, and Rust makes me think hard about memory and ownership. Still,{" "}
+                    <span className="text-silk">C</span> is always a household name: it&apos;s
+                    where I go when I need to know exactly what the machine is doing.
+                </p>
+                <p>
                     Outside of work and school, I run{" "}
-                    <a href="https://www.youtube.com/@LowCapy" target="_blank" className="text-copper hover:underline">
+                    <a
+                        href="https://www.youtube.com/@LowCapy"
+                        target="_blank"
+                        className="text-copper hover:underline"
+                    >
                         LowCapy
                     </a>
                     , a YouTube channel where I make videos explaining Rust and systems concepts and
@@ -27,12 +39,21 @@ export default function AboutPage() {
                 </p>
                 <p>
                     Before all this, I was a machine learning intern at Rice University&apos;s
-                    Aiden Lab, working on genomic data.
+                    Aiden Lab, training deep learning models on Hi-C heatmaps to detect gene
+                    activity. My preprocessing pipeline improved cancer-gene detection recall by
+                    15.4%.
                 </p>
                 <p>
-                    Away from the keyboard, I train Muay Thai and boxing, swim, hike, and take
-                    photos along the way. I like to cook, and I&apos;m always learning languages:
-                    I speak English, Spanish, and Japanese, and I&apos;m working on Korean.
+                    Away from the keyboard, I train Muay Thai and boxing, swim, and hike. I also
+                    shoot photography professionally: nature, street, and portraits. I love to
+                    cook, and I&apos;m always learning a language. I speak English, Spanish, and
+                    Japanese, and I&apos;m currently studying Korean and Mandarin.
+                </p>
+                <p>
+                    AI and coding agents have been great, and I use them at work every day. But
+                    programming is something I genuinely enjoy, so on my own time I still like to
+                    understand the code and write it by hand. That&apos;s also how this site was
+                    built.
                 </p>
             </div>
 
